@@ -41,7 +41,7 @@
   <section class="hero" id="home">
     <div class="main-content">
       <h4>Hi There!</h4>
-      <h1>I'm  <span> Somon Ahmed</span></h1>
+      <h1>I'm  <span class="input"></span></h1>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt nisi perferendis eum sit modi quisquam enim aspernatur dolores illo.</p>
       <div class="social">
         <a href="https://www.facebook.com/somonahmed420" target="_blank"><i class="ri-facebook-fill"></i></a>
@@ -94,14 +94,65 @@
           Freelancer:
           <span>Availabel</span>
         </p>
-      </div>
+        
       <a href="#" class="btn">View all Project</a>
+      </div>
     </div>
   </section>
+  <!-- About Section End -->
+  <section class="services" id="services">
+    <div class="center-text">
+      <h2>My <span>Services</span></h2>
+    </div>
+
+    <div class="services-content">
+      <div class="box">
+        <img src="images/s-1.svg" alt="">
+        <h3>Ui/Ux Design</h3>
+        <p>Fringilla dapibus platean interdum justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution</p>
+        <a href="#">
+          Download now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="box">
+        <img src="images/s-2.svg">
+        <h3>Ui/Ux Design</h3>
+        <p>Fringilla dapibus platean interdum justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution</p>
+        <a href="#">
+          Download now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+
+      <div class="box">
+        <img src="images/s-3.svg">
+        <h3>Ui/Ux Design</h3>
+        <p>Fringilla dapibus platean interdum justoutan elentum lectus tellus midign issimer motana egestas imperdiet solution</p>
+        <a href="#">
+          Download now
+          <i class="ri-arrow-right-line"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+  <!-- Services Section End -->
+
+  
 
 
 
 
   <script src="script.js"></script>
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <script>
+   var typed = new Typed(".input", {
+    strings:["Somon Ahmed", "UI/UX Designer", "Graphic Designer","Web Designer"],
+    typeSpeed:100,
+    backSpeed:65,
+    loop:true
+})
+  </script>
 </body>
 </html>
