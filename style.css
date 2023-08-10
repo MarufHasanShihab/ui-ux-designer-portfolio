@@ -276,4 +276,110 @@ section{
 }
 .box:hover{
   transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 0 20px var(--main-color);
+}
+
+/* Services section end */
+.portfolio{
+  background-color: var(--secound-bg-color);
+}
+.portfolio-content{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 2.3rem;
+  margin-top: 4.2rem;
+}
+.row{
+  background-color: #2d343f;
+  border-radius: 28px;
+  border: 1px solid transparent;
+  box-shadow: 0 0 5px var(--main-color);
+  padding: 20px;
+  transition: all .50s ease;
+}
+.row img{
+  width: 100%;
+  height: auto;
+  border-radius: 28px;
+  margin-bottom: 1.4rem;
+}
+.main-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.main-row h1{
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--other-color);
+}
+.main-row a i{
+  align-items: center;
+  justify-content: center;
+  width: 55px;
+  height: 55px;
+  font-size: 25px;
+  padding: 4px;
+  background-color: #075fe4;
+  color: var(--text-color);
+  border-radius: 50%;
+}
+.row h4{
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+.row:hover{
+  transform: translateY(-5px) scale(1.03);
+  cursor: pointer;
+  box-shadow: 0 0 20px var(--main-color);
+}
+/* portfolio section end */
+
+/* contact section start */
+.contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4.2rem;
+}
+.contact-form form{
+  position: relative;
+  width: 600px;
+}
+form input,
+textarea{
+  width: 100%;
+  padding: 20px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 5px var(--main-color);
+  background-color: #2d343f;
+  color: var(--text-color);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+form input::placeholder,
+form textarea::placeholder{
+  color: var(--other-color);
+  font-size: 15px;
+}
+form .send-btn{
+  display: inline-block;
+  padding: 11px 26px;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600px;
+  width: 30%;
+  cursor: pointer;
+  transition: all .50s ease;
+}
+
+form .send-btn:hover{
+  background-color: transparent;
+  color: var(--main-color);
+  box-shadow: 0 0 20px var(--main-color);
 }
