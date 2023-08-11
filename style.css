@@ -192,6 +192,7 @@ section{
   height: 500px;
   max-width: 530px;
   object-fit: cover;
+  background-color: var(--bg-color);
   border: 7px solid var(--main-color);
   border-radius: 50%;
   box-shadow: 0 0 20px var(--main-color);
@@ -382,4 +383,140 @@ form .send-btn:hover{
   background-color: transparent;
   color: var(--main-color);
   box-shadow: 0 0 20px var(--main-color);
+}
+/* contact section end */
+
+/* footer section start */
+.footer{
+  padding: 22px 12%;
+  background-color: var(--secound-bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.copyright{
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--other-color);
+}
+.scroll-top{
+  display: flex;
+  align-items: center;
+  background-color: #075fe4;
+  justify-content: center;
+   width: 45px;
+   height: 45px;
+  color: var(--text-color);
+  border-radius: 50%;
+  font-size: 27px; 
+  font-weight: 700;
+}
+/* footer end */
+
+
+
+
+
+
+/* Media quary */
+
+
+/* @media screen and (max-width:1380px) {
+  header{
+    padding: 20px 5%;
+  }
+  header.sticky{
+    padding: 14px 5%;
+  }
+  section{
+    padding: 90px 5% 80px;
+  }
+  .footer{
+    padding: 18px 5%;
+  }
+} */
+
+
+@media screen and (max-width:1290px){
+  .about{
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 8rem;
+  }
+  .about-img{
+    text-align: center;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+  .box{
+    padding: 40px 40px 46px;
+  }
+  .box img{
+    width: 100%;
+    height: 60px;
+    max-width: 60px;
+  }
+  .box h3{
+    font-size: 21px;
+  }
+}
+  
+
+@media screen and (max-width:950px){
+  :root{
+    --h1-font:3.5rem;
+  }
+  #menu-icon{
+    display: block;
+  }
+  .navlist{
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 255px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--bg-color);
+    transition: all .50s ease;
+  }
+  .navlist a{
+    display: block;
+    padding: 17px;
+    font-size: 22px;
+  }
+  .navlist .active{
+    right: 0;
+  }
+}
+
+
+
+
+@media screen and (max-width:680px){
+  .main-content p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px){
+  :root{
+    --h1-font: 2.8rem;
+    --h2-font: 2rem;
+  }
+  
+  .hero{
+    background-size: cover;
+  }
+}
+
+
+@media screen and (max-width: 470px){
+  :root{
+    --h1-font: 2.4rem;
+    --h2-font: 1.5rem;
+  }
 }
