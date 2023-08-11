@@ -1,0 +1,12 @@
+.social{
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px 60px 0px;
+}
+.social a i{
+  font-size: 50px;
+  margin-left: 20px;
+}
+.social-link h2{
+  
+}

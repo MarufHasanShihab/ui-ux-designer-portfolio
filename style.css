@@ -388,17 +388,65 @@ form .send-btn:hover{
 
 /* footer section start */
 .footer{
-  padding: 22px 12%;
   background-color: var(--secound-bg-color);
-  display: flex;
-  justify-content: space-between;
+  padding: 35px 12%;
+}
+.footer-iteam{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+  gap: 3rem;
   align-items: center;
   gap: 2rem;
+}
+.ui a{
+  font-size: 1.5rem;
+}
+.ui p{
+  width: 200px;
+  margin-top: 20px;
+  font-size: var(--p-font);
+  color: var(--other-color);
+}
+.social{
+  margin-top: 30px ;
+}
+.page h3{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.page li{
+  padding-bottom: 5px;
+}
+.page li a{
+  color: var(--other-color);
+  font-size: var(--p-font);
+}
+.service-2 h3{
+  margin-bottom: 20px;
+  font-size: 1.5rem
+}
+.service-2 li{
+  padding-bottom: 10px;
+  color: var(--other-color);
+  font-size: var(--p-font);
+}
+.contact-2 h3{
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+}
+.contact-2 li{
+  padding-bottom: 10px;
+  color: var(--other-color);
 }
 .copyright{
   font-size: 15px;
   font-weight: 400;
+  text-align: center;
   color: var(--other-color);
+}
+.scroll{
+  display: flex;
+  justify-content: right;
 }
 .scroll-top{
   display: flex;
@@ -421,8 +469,8 @@ form .send-btn:hover{
 
 /* Media quary */
 
-
-/* @media screen and (max-width:1380px) {
+ 
+  @media screen and (max-width:1280px) {
   header{
     padding: 20px 5%;
   }
@@ -435,7 +483,7 @@ form .send-btn:hover{
   .footer{
     padding: 18px 5%;
   }
-} */
+}
 
 
 @media screen and (max-width:1290px){
@@ -504,19 +552,33 @@ form .send-btn:hover{
 
 @media screen and (max-width: 576px){
   :root{
-    --h1-font: 2.8rem;
+    --h1-font: 2.7rem;
     --h2-font: 2rem;
   }
   
   .hero{
     background-size: cover;
+    padding-top: 150px;
   }
 }
 
 
 @media screen and (max-width: 470px){
   :root{
-    --h1-font: 2.4rem;
+    --h1-font: 2.2rem;
     --h2-font: 1.5rem;
+  }
+  .hero{
+    background-size: cover;
+    padding-top: 150px;
+  }
+  .logo{
+    font-size: 1rem;
+  }
+  .footer-iteam{
+    grid-template-columns: 2fr;
+  }
+  form .send-btn{
+    width: 100%;
   }
 }
