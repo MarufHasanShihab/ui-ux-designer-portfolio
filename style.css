@@ -569,6 +569,7 @@ form .send-btn:hover{
     --h2-font: 1.5rem;
   }
   .hero{
+    background-position: center;
     background-size: cover;
     padding-top: 150px;
   }
