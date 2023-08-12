@@ -573,12 +573,15 @@ form .send-btn:hover{
     padding-top: 150px;
   }
   .logo{
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .footer-iteam{
     grid-template-columns: 2fr;
   }
   form .send-btn{
     width: 100%;
+  }
+  .h-btn{
+    padding: 11px 20px;
   }
 }
